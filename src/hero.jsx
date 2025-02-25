@@ -19,6 +19,9 @@ function Hero(){
           const camera = new THREE.PerspectiveCamera(75, size.width / size.height, 0.1, 100);
           camera.position.z = 4;
 
+          canvas.style.touchAction = "auto"; // Allow touch scrolling
+canvas.style.pointerEvents = "auto"; 
+
 
            // Create Renderer
     const renderer = new THREE.WebGLRenderer({ canvas });
