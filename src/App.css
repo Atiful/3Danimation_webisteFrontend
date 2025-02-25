@@ -1,0 +1,311 @@
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+
+.first-page {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  overflow-x: hidden;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.div {
+  width: 100%;
+  height: 20vh; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #282c34;
+  color: white;
+  font-size: 2rem;
+}
+
+
+
+.content-center{
+  position: absolute;
+  overflow: hidden;
+  top : 10%;
+  left : 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top : 30px;
+  color : white;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+/* middle content */
+
+.content-center .part1{
+  width : 40%;
+}
+
+.content-center .part1 h1{
+  line-height: 3rem;
+  margin : 30px 0px;
+  font-size: 2.5rem;
+}
+
+.content-center .part1 p{
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  opacity: 0.7;
+  margin : 30px 0px;
+}
+
+.content-center .part1 button{
+  background-color: rgba(0, 0, 0, 0.894);
+  color : white;
+  border-radius: 0.7rem;
+  padding : 10px 20px;
+  border : 2px solid #100997;
+  box-shadow: 2px 3px 4px #0c076c;
+}
+
+
+
+
+
+@media(max-width : 868px){
+  .content-center{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .content-center .part1 , .content-center .part2{
+    width: 90%;
+  }
+  .section1{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+  .menubar{
+      display: block;
+      position: absolute;
+      right : 5%;
+  }
+  .item{
+      position: absolute;
+      top : -100px;
+  }
+  .services{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width : 100% !important;
+  }
+  .services p{
+      width : 100% !important;
+  }
+  .container .box{
+    width: 90%;
+  }
+  
+
+}
+
+.images-section{
+  margin : 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width : 100%;
+  min-height: 100px;
+  gap : 2rem;
+}
+
+.images-section img{
+  height : 40px;
+}
+
+
+
+
+/* services section */
+.services{
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  gap : 2rem;
+  margin : 20px 0;
+  align-items: center;
+}
+
+.services h3{
+ font-size: 2rem;
+ background-color: greenyellow;
+}
+
+.services p{
+  padding : 5px 20px;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  opacity: 0.7;
+  width : 70%;
+}
+
+
+/* General Container Styling */
+/* General Container Styling */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+  padding: 40px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Box Styling */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Gradient Backgrounds for Each Box */
+.black {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+.white {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: black;
+}
+
+#left {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+}
+
+#right {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: white;
+}
+
+/* Box Hover Effects */
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Content */
+.part1 h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.part1 h4 {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.part1 h4:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Image Styling */
+.part2 img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.part2 img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: 1fr; /* Stack elements in a single column */
+  }
+
+  .box {
+      padding: 25px;
+  }
+
+  .part1 h2 {
+      font-size: 1.5rem;
+  }
+
+  .part2 img {
+      max-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 20px;
+  }
+
+  .box {
+      padding: 20px;
+  }
+
+  .part1 h2 {
+      font-size: 1.2rem;
+  }
+
+  .part1 h4 {
+      font-size: 1rem;
+  }
+
+  .part2 img {
+      max-width: 130px;
+  }
+}
+
+
+
+
+.extra{
+  padding : 50px 5px;
+  margin : 4px 40px;
+
+}
+
+.footer{
+  height : 300px;
+  width : 100%;
+}
+
+.logo{
+ color : white;
+ position: absolute;
+ top : 12%;
+ left : 0;
+ font-size: 2rem;
+ 
+}

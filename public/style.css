@@ -1,0 +1,259 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.menubar{
+    display: none;
+}
+
+.section1{
+    width : 100%;
+    position : relative;
+    padding : 2.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom : 2.4rem;
+}
+
+nav i{
+transform: scale(2);
+}
+
+nav .item{
+    display: flex;
+    justify-content: space-between;
+    gap : 1.4rem;
+    align-items: center;
+}
+
+.section1 h1{
+    font-size: 2rem;
+}
+
+.section1 h3{
+    font-size: 1rem;
+}
+
+nav button{
+    padding : 0.6rem;
+    border-radius: 0.4rem;
+    background-color: transparent;
+}
+
+
+.content-center{
+    width : inherit;
+    /* height : 70vh; */
+    display: flex;
+    justify-content: space-between;
+    margin-top : 30px;
+}
+
+
+/* middle content */
+
+.content-center .part1{
+    width : 40%;
+}
+
+.content-center .part1 h1{
+    line-height: 3rem;
+    margin : 30px 0px;
+    font-size: 2.5rem;
+}
+
+.content-center .part1 p{
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    opacity: 0.7;
+    margin : 30px 0px;
+}
+
+.content-center .part1 button{
+    background-color: rgba(0, 0, 0, 0.894);
+    color : white;
+    border-radius: 0.7rem;
+    padding : 10px 20px;
+}
+
+
+.content-center .part2{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding : 30px;
+}
+
+.content-center .part2 img{
+    width : inherit;
+    height : inherit;
+}
+
+@media(max-width : 868px){
+    .content-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-center .part1 , .content-center .part2{
+      width: 90%;
+    }
+    .section1{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .menubar{
+        display: block;
+        position: absolute;
+        right : 5%;
+    }
+    .item{
+        position: absolute;
+        top : -100px;
+    }
+    .services{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services p{
+        width : 100%;
+    }
+    
+
+}
+
+.images-section{
+    margin : 80px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width : inherit;
+    gap : 2rem;
+}
+
+.images-section img{
+    height : 40px;
+}
+
+
+
+
+/* services section */
+.services{
+    display: flex;
+    justify-content: start;
+    gap : 2rem;
+    margin : 20px 0;
+    align-items: center;
+}
+
+.services h3{
+   font-size: 2rem;
+   background-color: greenyellow;
+}
+
+.services p{
+    padding : 5px 20px;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    opacity: 0.7;
+    width : 70%;
+}
+
+
+/* container section */
+.container{
+    margin : 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap : 30px;
+}
+
+.container .box{
+    width : 450px;
+  flex-shrink: 0;
+  min-height : 200px;
+  border : 2px solid black;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 0px black;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding : 20px;
+}
+
+.container .box .part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .box .part1 h2{
+    font-size: 1.3rem;
+}
+
+.container .box .part1 i{
+    background-color: black;
+    border-radius: 50%;
+    color : white;
+}
+
+.container .box img{
+    border-radius: 2rem;
+}
+
+.container .black{
+    background-color: white;
+    color : black;
+}
+
+.black h2{
+    background-color: greenyellow;
+    border-radius: 10px;
+
+}
+
+.black i{
+  background-color: white;
+}
+
+.white i{
+    background-color: black;
+  }
+
+.white h2{
+    background-color: white;
+    color : black;
+    border-radius: 10px;
+}
+
+.container .white{
+    background-color: black;
+    color : white;
+}
+
+.part2 img{
+    background-color: transparent;
+}
+
+.footer{
+    height : 300px;
+    width : 100%;
+}
