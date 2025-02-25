@@ -12,6 +12,8 @@ function Hero(){
       
 
       useEffect(() => {
+
+
           const canvas = canvasRef.current;
           if (!canvas) return;
 
@@ -41,31 +43,22 @@ canvas.style.pointerEvents = "auto";
 
  
 
-      // background images
-//       const textureLoader = new THREE.TextureLoader();
-// textureLoader.load('/dark-gradient-background.avif', (texture) => {
-//   texture.colorSpace = THREE.SRGBColorSpace;
-//     scene.background = texture;
-//     // texture.transparent = true;
-// });
-
 scene.background = new THREE.Color("rgb(2,0,36)");
-// scene.background.transparent = true;
 
 
 
       
           const geometrys = {
             sphere : new THREE.SphereGeometry(0.3 , 10 , 10),
-            tourse : new THREE.TorusGeometry(1, 1, 16, 20),
+            tourse : new THREE.TorusGeometry(0.6, 1, 16, 20),
             sphere2 : new THREE.SphereGeometry(0.3 , 10 , 10),
             tourse2 : new THREE.TorusGeometry(0.5, 0.5, 16, 20),
      }
 
      const materials = {
-       sphere : new THREE.MeshBasicMaterial({color : "yellow" , wireframe : true}),
+       sphere : new THREE.MeshBasicMaterial({color : "#CCFFCC" , wireframe : true}),
        tourse : new THREE.MeshBasicMaterial( {color : "green" , wireframe : true}),
-       sphere2 : new THREE.MeshBasicMaterial({color : "white" , wireframe : true}),
+       sphere2 : new THREE.MeshBasicMaterial({color : "pink" , wireframe : true}),
        tourse2 : new THREE.MeshBasicMaterial( {color : "purple" , wireframe : true}),
      }
 
@@ -75,8 +68,8 @@ scene.background = new THREE.Color("rgb(2,0,36)");
      const tourse2 = new THREE.Mesh(geometrys.tourse2 , materials.tourse2);
     
 
-     sphere.position.set(2, 0, 0);
-     tourse.position.set(2, 0, 0);
+     sphere.position.set(1, 1, 0);
+     tourse.position.set(1, 1, 0);
      sphere2.position.set(-1, -0.3, 0);
      tourse2.position.set(-1, -0.3, 0);
      
@@ -91,13 +84,13 @@ scene.background = new THREE.Color("rgb(2,0,36)");
         requestAnimationFrame(animate);
         controls.update();
         const elapsedTime =  clock.getElapsedTime();
-        sphere.rotation.y = (elapsedTime * 0.3) * -1;
-        sphere.rotation.x = (elapsedTime *0.3) * -1;
-        sphere.rotation.z =( elapsedTime *0.3) * -1;
+        sphere.rotation.y = (elapsedTime * 0.4) * -1;
+        sphere.rotation.x = (elapsedTime *0.4) * -1;
+        sphere.rotation.z =( elapsedTime *0.4) * -1;
 
-        group2.position.x = Math.sin(elapsedTime) * 0.1;
-        group2.position.y = Math.cos(elapsedTime) * 0.1;
-        group2.position.z = Math.sin(elapsedTime) * 0.1;
+        group2.position.x = Math.sin(elapsedTime) * 0.4;
+        group2.position.y = Math.cos(elapsedTime) * 0.4;
+        group2.position.z = Math.sin(elapsedTime) * 0.4;
 
         tourse.rotation.y = elapsedTime * 0.1;
         tourse.rotation.x = elapsedTime *0.1;
@@ -120,7 +113,9 @@ scene.background = new THREE.Color("rgb(2,0,36)");
 
     return(
         <>
-          <canvas ref = {canvasRef} className="canvas"></canvas>
+        <canvas ref = {canvasRef} className="canvas"></canvas>
+
+          
         </>
     )
 }

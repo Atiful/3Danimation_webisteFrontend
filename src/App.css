@@ -14,9 +14,14 @@
 
 canvas {
   display: block;
+  position: relative;
   width: 100%;
   overflow: hidden;
+  touch-action: auto; 
+    pointer-events: auto; 
+    z-index: -1;
 }
+
 
 
 .div {
@@ -35,7 +40,7 @@ canvas {
 .content-center{
   position: absolute;
   overflow: hidden;
-  top : 10%;
+  top : 20%;
   left : 20px;
   display: flex;
   justify-content: space-between;
