@@ -80,7 +80,6 @@ canvas {
   padding : 10px 20px;
   border : 2px solid #100997;
   box-shadow: 2px 3px 4px #0c076c;
-  margin-bottom: 10px;
 }
 
 
@@ -95,6 +94,10 @@ canvas {
       align-items: center;
       top : 30%;
   }
+  .content-center .part1 p{
+    margin-bottom: 5px;
+  }
+
   .content-center .part1{
     width: 100%;
   }
