@@ -20,7 +20,6 @@ canvas {
   touch-action: auto; 
     pointer-events: auto; 
     /* z-index: -1; */
-    pointer-events: none;
 }
 
 
@@ -39,36 +38,33 @@ canvas {
 
 
 .content-center{
+
   position: absolute;
   overflow: hidden;
-  top : 20%;
+  top : 50%;
+  bottom: 0;
   left : 20px;
-  display: flex;
-  justify-content: space-between;
-  margin-top : 30px;
+  display: inline-flex;
+  justify-content: center;
   color : white;
   z-index: 1;
   /* pointer-events: none; */
 }
 
+
 .extra{
-  padding : 50px 5px;
+  padding : 20px 5px;
   margin : 4px 40px;
 }
 
-/* .content-center .part1 h1 ,  .content-center .part1 p , .content-center .part1 button{
-  z-index : 1;
-} */
-
-/* middle content */
-
 .content-center .part1{
-  width : 40%;
+  width : 70%;
 }
 
 .content-center .part1 h1{
   line-height: 3rem;
   margin : 30px 0px;
+  margin-top : 0px;
   font-size: 2.5rem;
 }
 
@@ -76,7 +72,7 @@ canvas {
   font-size: 0.9rem;
   line-height: 1.6rem;
   opacity: 0.7;
-  margin : 30px 0px;
+  margin : 20px 0px 20px 0px;
 }
 
 .content-center .part1 button{
@@ -86,6 +82,7 @@ canvas {
   padding : 10px 20px;
   border : 2px solid #100997;
   box-shadow: 2px 3px 4px #0c076c;
+  margin-bottom: 20px;
 }
 
 
@@ -99,8 +96,8 @@ canvas {
       justify-content: center;
       align-items: center;
   }
-  .content-center .part1 , .content-center .part2{
-    width: 90%;
+  .content-center .part1{
+    width: 100%;
   }
   .section1{
      display: flex;
@@ -222,10 +219,10 @@ canvas {
 }
 
 /* Box Hover Effects */
-.box:hover {
+/* .box:hover {
   transform: translateY(-10px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Text Content */
 .part1 h2 {
@@ -240,10 +237,10 @@ canvas {
   font-weight: bold;
 }
 
-.part1 h4:hover {
+/* .part1 h4:hover {
   color: #ffffff;
   text-decoration: underline;
-}
+} */
 
 /* Image Styling */
 .part2 img {
@@ -254,11 +251,11 @@ canvas {
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
-
+/* 
 /* Image Hover Effect */
-.part2 img:hover {
+/* .part2 img:hover {
   transform: scale(1.1);
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {

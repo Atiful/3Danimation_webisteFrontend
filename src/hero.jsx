@@ -70,10 +70,10 @@ scene.background = new THREE.Color("rgb(2,0,36)");
      const tourse2 = new THREE.Mesh(geometrys.tourse2 , materials.tourse2);
     
 
-     sphere.position.set(1, 1, 0);
-     tourse.position.set(1, 1, 0);
-     sphere2.position.set(-1, -0.3, 0);
-     tourse2.position.set(-1, -0.3, 0);
+     sphere.position.set(1, 2, 0);
+     tourse.position.set(1, 2, 0);
+     sphere2.position.set(-1, 1, 0);
+     tourse2.position.set(-1, 1, 0);
      
      group.add(sphere , tourse );
      group2.add(sphere2 , tourse2);
