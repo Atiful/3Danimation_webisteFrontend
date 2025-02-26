@@ -7,12 +7,6 @@ function ContentMain() {
     let p = useRef(null);
     let button = useRef(null);
 
-    // const [error , setError] = useState(false);
-
-    // if(!h1.current || !p.current || !button.current){
-    //     setError(true);
-    // }
-
     useEffect(() => {
         let ctx = gsap.context(() => {
           let tl = gsap.timeline();

@@ -8,7 +8,7 @@
 .first-page {
   width: 100%;
   height: 100%;
-  /* position: absolute; */
+  /* position: relative; */
   overflow-x: hidden;
 }
 
@@ -19,7 +19,8 @@ canvas {
   overflow: hidden;
   touch-action: auto; 
     pointer-events: auto; 
-    z-index: -1;
+    /* z-index: -1; */
+    pointer-events: none;
 }
 
 
@@ -46,10 +47,18 @@ canvas {
   justify-content: space-between;
   margin-top : 30px;
   color : white;
-  z-index: 2;
-  pointer-events: none;
+  z-index: 1;
+  /* pointer-events: none; */
 }
 
+.extra{
+  padding : 50px 5px;
+  margin : 4px 40px;
+}
+
+/* .content-center .part1 h1 ,  .content-center .part1 p , .content-center .part1 button{
+  z-index : 1;
+} */
 
 /* middle content */
 
@@ -294,12 +303,6 @@ canvas {
 
 
 
-
-.extra{
-  padding : 50px 5px;
-  margin : 4px 40px;
-
-}
 
 .footer{
   height : 300px;

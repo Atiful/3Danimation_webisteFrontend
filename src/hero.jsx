@@ -36,6 +36,8 @@ canvas.style.pointerEvents = "auto";
     controls.enableDamping = true;
     controls.enableZoom = false;
 
+    
+
 
       // Create a Group
       const group = new THREE.Group();
