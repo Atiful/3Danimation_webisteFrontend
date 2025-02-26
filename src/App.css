@@ -41,7 +41,7 @@ canvas {
 
   position: absolute;
   overflow: hidden;
-  top : 45%;
+  top : 40%;
   bottom: 0;
   left : 20px;
   display: inline-flex;
@@ -82,7 +82,7 @@ canvas {
   padding : 10px 20px;
   border : 2px solid #100997;
   box-shadow: 2px 3px 4px #0c076c;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 
