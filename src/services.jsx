@@ -22,7 +22,8 @@ function Services() {
                 ease: "power4.out",
                 scrollTrigger: {
                     trigger: serviceh3.current,
-                    start : "top 0%",
+                    start: "top 65%",
+                    end: "top 40%",
                     scrub: true,
                 },
             });
